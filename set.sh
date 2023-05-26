@@ -1,4 +1,6 @@
 #!/bin/bash
+# Tested Centos 7
+# Usage:   wget https://raw.githubusercontent.com/RockieGear/cert/main/set.sh && chmod +x set.sh && bash set.sh <domain.com>
 
 domain=$1
 
