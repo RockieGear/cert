@@ -2,6 +2,12 @@
 # Tested Centos 7
 # Usage:   wget https://raw.githubusercontent.com/RockieGear/cert/main/set.sh && chmod +x set.sh && bash set.sh <domain.com>
 
+if [ $# -eq 0 ]
+then
+    echo "Usage: set.sh <domain>"
+    exit 1
+fi
+
 domain=$1
 
 config_file="/etc/nginx/nginx.conf"
